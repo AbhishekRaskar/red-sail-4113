@@ -1,12 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+    #main div {
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+        width: 100%;
+        height: 80px;
+        /* border: 1px solid green; */
+        flex-direction: row;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    #top>img {
+        /* border: 1px solid rgb(140, 0, 255); */
+        width: 250px;
+    }
+
+    button {
+        height: 80px;
+    }
+
+    #sub {
+        /* border: 1px solid black; */
+        display: flex;
+        /* justify-content: space-evenl;y; */
+        /* align-items: center; */
+        height: auto;
+
+    }
+
+    #sub>div {
+        /* border: 1px solid red; */
+        margin-left: 250px;
+    }
+
+    #sub>div>img {
+        width: 90%;
+        height: 700px;
+        margin-right: 300px;
+    }
+
+    #head {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #head h3,
+    h4 {
+        color: gray;
+    }
+
+    #head button {
+        background-color: rgb(236, 38, 3);
+        color: white;
+        border: 1px solid white;
+        /* font-family: Arial, Helvetica, sans-serif; */
+        width: 90%;
+        height: 50px;
+        border-radius: 5px;
+    }
+
+    #sub2 img {
+        width: 40%;
+        height: 100px;
+    }
+
+    #sub2 h2 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #sub2 div {
+        display: flex;
+        justify-content: space-evenly;
+        
+    }
+   h1,h2 {
+        text-align: center;
+        /* font-family: Arial, Helvetica, sans-serif; */
+    }
+    #mid{
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+
+    }
+    #mid div{
+        width: 30%;
+    }
+    #mid img{
+        width: 40%;
+        height: 100px;
+    }
+</style>
+
 <body>
-    <button></button>
+    <div id="main">
+        <div>
+            <div id="top">
+                <img src="My Plate.png" alt="logo">
+            </div>
+            <div>
+                <div>Products</div>
+                <div>Blog</div>
+                <div>Forums</div>
+                <div>About</div>
+                <div>Support</div>
+                <button>Login</button>
+            </div>
+        </div>
+    </div>
+    <div id="sub">
+        <div id="head">
+            <h1>Eat right,Live good.</h1>
+            <h3>Track your calories, exercise, biometrics and health data.</h3>
+            <button>Sign Up</button>
+            <h4>Already have an account?<a href="">Login</a></h4>
+        </div>
+        <div>
+            <img src="https://cdn1.cronometer.com/2021/landing/cronometer-hero-graphic.svg" alt="img">
+        </div>
+    </div>
+    <div id="sub2">
+        <h2>As Seen On</h2>
+        <div>
+
+            <div>
+                <img src="https://cdn1.cronometer.com/2021/landing/media-mention-2.svg" alt="1">
+            </div>
+            <div>
+                <img src="	https://cdn1.cronometer.com/2021/landing/media-mention-1.svg" alt="2">
+            </div>
+            <div>
+                <img src="	https://cdn1.cronometer.com/2021/landing/media-mention-3.svg" alt="3">
+            </div>
+        </div>
+        <h2>Available on Web, iOS and Android</h2>
+        <div>
+            <div>
+                <img src="	https://cdn1.cronometer.com/2021/landing/ios-icon.svg" alt="App Store">
+            </div>
+            <div>
+                <img src="https://cdn1.cronometer.com/2021/landing/android-icon.svg" alt="Google Play">
+            </div>
+        </div>
+    </div>
+    
+        <h1>Discover your nutrition</h1>
+        <h2>Cronometer encourages you to not just count your calories but to focus on your nutrition as a whole.</h2>
+    <div id="mid">
+        <div>
+            <img src="https://cdn1.cronometer.com/2021/landing/community-icon.svg" alt="l1">
+            <h2>Over 5 million users</h2>
+            <p>Join the community to get tips and <br> inspiration from other users on our <br> forums and Facebook group.</p>
+        </div>
+        <div>
+            <img src="https://cdn1.cronometer.com/2021/landing/nutrition-icon.svg" alt="l2">
+            <h2>Accurate nutrition data</h2>
+            <p>Be confident that the food you log has <br> the correct nutrition data. We verify <br> every food submission for accuracy.</p>
+        </div>
+        <div>
+            <img src="	https://cdn1.cronometer.com/2021/landing/security-icon.svg" alt="l3">
+            <h2>Data privacy & security</h2>
+            <p>We take the security of our users' <br> accounts seriously - we will never sell <br> your account data to third parties.</p>
+        </div>
+
+    </div>
+
+
+
+
 </body>
+
 </html>
+<script>
+</script>
