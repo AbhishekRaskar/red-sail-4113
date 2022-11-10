@@ -12,61 +12,67 @@
         display: flex;
         justify-content: space-evenly;
         margin: auto;
-        width: 100%;
-        height: 80px;
+        width: 70%;
+        height: 100px;
         /* border: 1px solid green; */
         flex-direction: row;
         align-items: center;
         font-family: Arial, Helvetica, sans-serif;
+        font-size: 22px;
 
     }
 
     #top>img {
         /* border: 1px solid rgb(140, 0, 255); */
-        width: 250px;
+        width: 300px;
     }
 
     button {
-        height: 80px;
+        /* height: 80px; */
+        border: 1px solid white;
+        font-size: 22px;
     }
 
     #sub {
         /* border: 1px solid black; */
-        display: flex;
-        /* justify-content: space-evenl;y; */
-        /* align-items: center; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         height: auto;
-
-    }
-
-    #sub>div {
-        /* border: 1px solid red; */
-        margin-left: 250px;
+        align-items: center;
     }
 
     #sub>div>img {
         width: 90%;
-        height: 700px;
-        margin-right: 300px;
+        height: 500px;
+        /* margin-right: 300px; */
     }
 
-    #head {
+    #sub>head {
+        text-align: center;
+    }
+
+    #head h1 {
         font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        font-size: 50px;
+
     }
 
     #head h3,
     h4 {
         color: gray;
+        font-size: 30px;
     }
 
-    #head button {
+    #btn {
         background-color: rgb(236, 38, 3);
         color: white;
         border: 1px solid white;
         /* font-family: Arial, Helvetica, sans-serif; */
-        width: 90%;
+        width: 40%;
         height: 50px;
-        border-radius: 5px;
+        border-radius: 8px;
+        font-size: 20px;
     }
 
     #sub2 img {
@@ -82,24 +88,249 @@
     #sub2 div {
         display: flex;
         justify-content: space-evenly;
-        
-    }
-   h1,h2 {
-        text-align: center;
-        /* font-family: Arial, Helvetica, sans-serif; */
-    }
-    #mid{
-        display: flex;
-        text-align: center;
-        justify-content: space-evenly;
 
     }
-    #mid div{
-        width: 30%;
+
+    h1 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
     }
-    #mid img{
+
+    #h2 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+    }
+
+    #mid {
+        display: grid;
+        text-align: center;
+        /* align-items: center; */
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    #mid img {
         width: 40%;
         height: 100px;
+    }
+
+    #mid p {
+        color: grey;
+        font-size: 25px;
+    }
+
+    #MID {
+        display: grid;
+        text-align: center;
+        /* align-items: center; */
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    #MID img {
+        width: 40%;
+        height: 100px;
+    }
+
+    #MID p {
+        color: grey;
+        font-size: 25px;
+    }
+
+    #Bott p {
+        color: grey;
+        font-size: 17px;
+        text-align: center;
+    }
+
+    #Bott button {
+        background-color: rgb(236, 38, 3);
+        color: white;
+        border: 1px solid white;
+        /* font-family: Arial, Helvetica, sans-serif; */
+        width: 20%;
+        height: 50px;
+        border-radius: 8px;
+        font-size: 20px;
+        text-align: center;
+        margin-left: 40%;
+    }
+
+    #Bott>div>img {
+        /* border: 1px solid red; */
+        margin-left: 10%;
+    }
+
+    #Bott P {
+        font-size: 30px;
+    }
+
+    #Down {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        font-family: Arial, Helvetica, sans-serif;
+        align-items: center;
+        margin-left: 50px;
+
+    }
+
+    #Down img {
+        width: 20%;
+        height: 100px;
+    }
+
+    #Down h3 {
+        color: coral;
+        font-size: 40px;
+    }
+
+    #Down h2 {
+        color: gray;
+    }
+
+    #doctor img {
+        width: 60%;
+        height: 500px;
+    }
+
+    #Logo img {
+        width: 350px;
+    }
+
+    #Logo h2 {
+        color: black;
+    }
+
+    #Logo>button {
+        width: 34%;
+        height: 80px;
+        border: 1px solid green;
+        color: coral;
+        font-size: 25px;
+        border-radius: 7px;
+    }
+
+    #Bottom {
+        text-align: center;
+    }
+
+    #Bottom h2,
+    h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: gray;
+    }
+
+    #Bottom>button {
+        width: 27%;
+        height: 60px;
+        border: 1px solid coral;
+        color: coral;
+        font-size: 25px;
+        border-radius: 7px;
+    }
+
+    #Bottom img {
+        width: 60%;
+    }
+
+    #End {
+        margin-top: 30px;
+        background-color: gray;
+        height: 300px;
+        text-align: center;
+        width: 100%;
+        height: auto;
+
+    }
+
+    #End>div>img {
+        margin-top: 60px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    #end-img>img {
+        width: 20%;
+        height: 60px;
+    }
+
+    #Div {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: -17px;
+        background-color: gray;
+        height: 500px;
+        /* text-align: center; */
+    }
+    #Div > div{
+        padding: 50px;
+    }
+    #Div > img{
+            padding: 50px;
+    }
+    #Div > div > p,h2{
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+    #Div p:hover{
+        color: coral;
+       
+    }
+    /* small screen */
+    @media all and (min-width:200px) and (max-width:550px) {
+        #sub {
+            /* border: 1px solid black; */
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        #mid {
+            /* border: 1px solid black; */
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        #MID {
+            /* border: 1px solid black; */
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        #Down {
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+        #Div {
+        grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+
+    /* med screen */
+    @media all and (min-width:551px) and (max-width:799px) {
+        #sub {
+            /* border: 1px solid black; */
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        #mid {
+            /* border: 1px solid black; */
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        #MID {
+            /* border: 1px solid black; */
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        #Down {
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+        #Div {
+        grid-template-columns: repeat(1, 1fr);
+        }
     }
 </style>
 
@@ -120,14 +351,14 @@
         </div>
     </div>
     <div id="sub">
-        <div id="head">
-            <h1>Eat right,Live good.</h1>
-            <h3>Track your calories, exercise, biometrics and health data.</h3>
-            <button>Sign Up</button>
-            <h4>Already have an account?<a href="">Login</a></h4>
-        </div>
         <div>
             <img src="https://cdn1.cronometer.com/2021/landing/cronometer-hero-graphic.svg" alt="img">
+        </div>
+        <div id="head">
+            <h1>Eat right,<br>Live good.</h1>
+            <h3>Track your calories, exercise, biometrics <br> and health data.</h3>
+            <button id="btn">Sign Up</button>
+            <h4>Already have an account?<a href="">Login</a></h4>
         </div>
     </div>
     <div id="sub2">
@@ -154,29 +385,194 @@
             </div>
         </div>
     </div>
-    
-        <h1>Discover your nutrition</h1>
-        <h2>Cronometer encourages you to not just count your calories but to focus on your nutrition as a whole.</h2>
+
+    <h1>Discover your nutrition</h1>
+    <h2 id="h2">Cronometer encourages you to not just count your <br> calories but to focus on your nutrition as a
+        whole.</h2>
     <div id="mid">
         <div>
             <img src="https://cdn1.cronometer.com/2021/landing/community-icon.svg" alt="l1">
             <h2>Over 5 million users</h2>
-            <p>Join the community to get tips and <br> inspiration from other users on our <br> forums and Facebook group.</p>
+            <p>Join the community to get tips and <br> inspiration from other users on our <br> forums and Facebook
+                group.</p>
         </div>
         <div>
             <img src="https://cdn1.cronometer.com/2021/landing/nutrition-icon.svg" alt="l2">
             <h2>Accurate nutrition data</h2>
-            <p>Be confident that the food you log has <br> the correct nutrition data. We verify <br> every food submission for accuracy.</p>
+            <p>Be confident that the food you log has <br> the correct nutrition data. We verify <br> every food
+                submission for accuracy.</p>
         </div>
         <div>
             <img src="	https://cdn1.cronometer.com/2021/landing/security-icon.svg" alt="l3">
             <h2>Data privacy & security</h2>
-            <p>We take the security of our users' <br> accounts seriously - we will never sell <br> your account data to third parties.</p>
+            <p>We take the security of our users' <br> accounts seriously - we will never sell <br> your account data to
+                third parties.</p>
+        </div>
+
+    </div>
+
+    <h1>Develop healthy habits</h1>
+    <h2 id="h2">Count your calories, ensure you're meeting <br> nutrient targets, and see your progress over time.</h2>
+    <div id="MID">
+        <div>
+            <img src="	https://cdn1.cronometer.com/2021/landing/micronutrients-icon.svg" alt="l1">
+            <h2>Over 5 million users</h2>
+            <p>Join the community to get tips and <br> inspiration from other users on our <br> forums and Facebook
+                group.</p>
+        </div>
+        <div>
+            <img src="https://cdn1.cronometer.com/2021/landing/diary-icon.svg" alt="l2">
+            <h2>Accurate nutrition data</h2>
+            <p>Be confident that the food you log has <br> the correct nutrition data. We verify <br> every food
+                submission for accuracy.</p>
+        </div>
+        <div>
+            <img src="https://cdn1.cronometer.com/2021/landing/reports-icon.svg" alt="l3">
+            <h2>Data privacy & security</h2>
+            <p>We take the security of our users' <br> accounts seriously - we will never sell <br> your account data to
+                third parties.</p>
+        </div>
+        <div>
+            <img src="	https://cdn1.cronometer.com/2021/landing/scale-icon.svg" alt="l1">
+            <h2>Over 5 million users</h2>
+            <p>Join the community to get tips and <br> inspiration from other users on our <br> forums and Facebook
+                group.</p>
+        </div>
+        <div>
+            <img src="	https://cdn1.cronometer.com/2021/landing/fasting-icon.svg" alt="l2">
+            <h2>Accurate nutrition data</h2>
+            <p>Be confident that the food you log has <br> the correct nutrition data. We verify <br> every food
+                submission for accuracy.</p>
+        </div>
+        <div>
+            <img src="	https://cdn1.cronometer.com/2021/landing/food-icon.svg" alt="l3">
+            <h2>Data privacy & security</h2>
+            <p>We take the security of our users' <br> accounts seriously - we will never sell <br> your account data to
+                third parties.</p>
         </div>
 
     </div>
 
 
+    <div>
+        <h1>Find out if you're getting the vitamins and minerals you need with our food diary app.</h1>
+
+    </div>
+
+
+    <div id="Bott">
+        <button id="btn1">Sign Up</button>
+        <h1>Sync with Apps and Devices</h1>
+        <p>Sync Cronometer with these activity trackers, Apple Health, Google Fit and Samsung Health.</p>
+        <div>
+            <img src="https://cdn1.cronometer.com/2021/landing/devices-p-1600.png" alt="center img">
+        </div>
+    </div>
+    <hr>
+
+    <div id="Down">
+        <div>
+            <h3>I wasn't the only one concerned<br> about the unreliability of the<br> macros in both MyFitnessPal and
+                <br> Carb Manager.
+            </h3>
+            <img src="	https://cdn1.cronometer.com/2021/landing/ios-icon.svg" alt="play logo">
+        </div>
+        <div>
+            <h2>I started Keto in July. MyFitnessPal seemed pretty cool <br>. Spent hours setting it up and entering
+                recipes only to <br>discover the macros were not reliable due to all the<br> contributions by the
+                community. I was so frustrated. Then I<br> found a review of several apps (on the Keto Mojo website)<br>
+                and discovered I wasn't the only one concerned about <br>unreliability of the macros on both MFP and
+                CarbManager<br> (tried that too). Behold Cronometer! I love this app. It draws <br>from nutrition
+                databases with minimal community<br> contributions so much, much more reliability. There are<br> many
+                more free features. The user interface is easy to<br> navigate. I'm very happy with Cronometer.</h2>
+        </div>
+        <div>
+            <h2>This app is my dream! I've been on the hunt for something<br> that can track my daily nutritional needs
+                and the majority of<br> apps seem to think that only means macros. This tracks<br> EVERYTHING! Getting
+                my daily vitamins through food is so<br> important to me and this has taken a HUGE load off of my<br>
+                plate. I bought gold within minutes. This is set up great, <br>easy to use, links with my FitBit. I
+                could go on and on.</h2>
+        </div>
+        <div>
+            <h3>Cronometer tracks EVERYTHING! <br>... It's easy to use and links with <br>my FitBit.</h3>
+            <img src="	https://cdn1.cronometer.com/2021/landing/android-icon.svg" alt="play logo">
+        </div>
+        <div id="doctor">
+            <img src="	https://cdn1.cronometer.com/2021/landing/crono-pro-graphic.svg" alt="dtr">
+        </div>
+        <div id="Logo">
+            <img src="My Plate.png" alt="main">
+            <h2>Are you a healthcare professional?</h2>
+            <p>Check out our software designed for nutritionists, dietitians, research teams, schools, and hospitals.
+            </p>
+            <button>Learn About Pro</button>
+        </div>
+    </div>
+
+    <div id="Bottom">
+        <h1>We are Canadian</h1>
+        <h2>Independently owned and operated by people who care about their users' nutrition.</h2>
+        <img src="	https://cdn1.cronometer.com/2021/landing/cronometer-staff-2-p-1600.jpeg" alt="group">
+        <h3>Our headquarters are based in the idyllic mountain town of Revelstoke, BC, Canada. We are a team of <br>
+            over 25 professionals brought together by a love of nutrition, skiing, biking and the great outdoors.</h3>
+        <button>About US</button>
+        <hr>
+        <h2>Help us spread the good word about nutrition and become an affiliate.</h2>
+        <button>Become an Affiliate</button>
+    </div>
+
+    <div id="End">
+
+        <div>
+            <img src="https://cdn1.cronometer.com/2021/landing/social_instagram-icon.png" alt="">
+            <img src="	https://cdn1.cronometer.com/2021/landing/social_facebook-icon.png" alt="">
+            <img src="https://cdn1.cronometer.com/2021/landing/social_twitter-icon.png" alt="">
+            <img src="https://cdn1.cronometer.com/2021/landing/social_youtube-icon.png" alt="">
+        </div>
+
+        <div id="end-img">
+            <img src="	https://cdn1.cronometer.com/2021/landing/android-icon.svg" alt="play logo">
+            <img src="	https://cdn1.cronometer.com/2021/landing/ios-icon.svg" alt="play logo">
+        </div>
+    </div>
+<br>
+
+    <div id="Div">
+        <img src="My Plate.png" alt="">
+
+        <div>
+            <h2>Cronometer</h2>
+            <br>
+            <P>For Individulas</P>
+            <br>
+            <p>For Professionals</p>
+            <br>
+            <p>Privacy</p>
+            <br>
+            <p>Terms</p>
+            <br>
+        </div>
+        <div>
+            <h2>The Company</h2>
+            <br>
+            <P>About Us</P>
+            <br>
+            <p>Crona Blogs</p>
+            <br>
+            <p>Crona Forums</p>
+            <br>
+            <p>Jobs</p>
+            <br>
+            <p>Support</p>
+        </div>
+        <div>
+            <h2>Partners & Affilates</h2>
+            <br>
+            <P>Affilate Program</P>
+            <br>
+            <P>Media Kit</P>
+        </div>
+    </div>
 
 
 </body>
