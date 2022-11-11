@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <style>
+        #Main  {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+            /* border: 1px solid black; */
+        }
+
+        #Main>input {
+            width: 30%;
+            padding: 10px;
+            font-size: 25px;
+        }
+
+        #Main>button {
+            width: 31%;
+            padding: 10px;
+            font-size: 25px;
+        }
+
+        #Main h2 {
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: gray;
+        }
+
+        #Main a {
+            text-decoration: none;
+            color: coral;
+        }
+        #Last {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 20px;
+            margin: auto;
+            font-size: 30px;
+            font: bold;
+            /* display:block */
+        }
+        #Last input{
+            width:auto;
+            height: auto;
+            display: flex;
+            font-size: 20px;
+            padding: 10px;
+        }
+        #Last button{
+            width: 30%;
+            height: 50px;
+            font-size: 25px;
+            background-color: lightgreen;
+            color: white;
+            border: 1px solid white;
+            border-radius: 7px;
+            font: bold;
+        }
+        #gender,#date,#Height,#Weight{
+            display:flex
+        }
+        
+    </style>
+</head>
+<body>
+    
+        <div id="Main">
+            <img src="My Plate.png" alt="logo">
+            <input id="email" type="email" placeholder="Email Address">
+            <input id="pass" type="password" placeholder="Password">
+            <input id="Conf" type="password" placeholder="Confirm Password">
+            <br>
+            <h1>Your Body Type</h1>
+        </div>       
+            <div id="Last">
+                <div id="gender" >
+                Sex: <input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                </div>
+               <div id="date" >
+                Born:<input type="date">
+               </div>
+               <div id="Height" >
+                Height: <input type="number">cm
+               </div>
+               <div id="Weight" >
+                Weight: <input type="number" name="" id="">kg/pound
+               </div>                
+                <br>
+                <br>
+                <div>
+                    <input type="checkbox" name="" id="Tick"> I agree to the cronometer.com Terms of Service.
+                </div>
+                
+                <button> <a href="login.html"> Create Account</a></button>
+            </div>
+    
+
+</body>
+</html>
+<script>
+    document.querySelector("button").addEventListener("click",fun);
+    let arr= [];
+
+    function fun(event){
+    
+       let Email = document.querySelector("#email").value;
+
+       let Pass = document.querySelector("#pass").value;
+
+       let confirm = document.querySelector("#Conf").value;
+
+       let Gen = document.querySelector("#gender").value;
+
+       let Date = document.querySelector("#date").value;
+
+       let Height = document.querySelector("#email").value;
+
+       let Weight = document.querySelector("#email").value;
+
+       let Tick = document.querySelector("#email").value;
+      
+
+       let obj = {
+                mail : Email,
+                Password : Pass,
+                accept : confirm,
+                sex : Gen,
+                DOB : Date,
+                Hei : Height,
+                Wei : Weight,
+                Terms : Tick
+        }
+
+        let count = 0;
+       for(let key in obj){
+        if(obj[key]==""){
+            count++;
+            console.log("hi")
+        }
+       }
+       if(count>0){
+        alert("Please Fill all The Details");
+            event.preventDefault(); 
+       }
+       else{
+                arr.push(obj);
+                localStorage.setItem("Data",JSON.stringify(arr));
+       }
+
+    }
+    
+</script>
