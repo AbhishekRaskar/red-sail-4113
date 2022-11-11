@@ -1,0 +1,334 @@
+#main div {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    width: 70%;
+    height: 100px;
+    /* border: 1px solid green; */
+    flex-direction: row;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+
+}
+
+#top>img {
+    /* border: 1px solid rgb(140, 0, 255); */
+    width: 300px;
+}
+
+#main button {
+    width: 100%;
+    height: 50px;
+    border: 1px solid coral;
+    font-size: 22px;
+    /* color: red; */
+    border-radius: 5px;
+   
+}
+#main > div > div:nth-child(2) > button> a{
+    text-decoration: none;
+    color: coral;
+}
+
+#sub {
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+    align-items: center;
+}
+
+#sub>div>img {
+    width: 90%;
+    height: 500px;
+    /* margin-right: 300px; */
+}
+
+#sub>head {
+    text-align: center;
+}
+
+#head h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 50px;
+
+}
+
+#head h3,
+h4 {
+    color: gray;
+    font-size: 30px;
+}
+
+#btn {
+    background-color: rgb(236, 38, 3);
+    color: white;
+    border: 1px solid white;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    width: 40%;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#sub2 img {
+    width: 40%;
+    height: 100px;
+}
+
+#sub2 h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#sub2 div {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+
+#mid {
+    display: grid;
+    text-align: center;
+    /* align-items: center; */
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+#mid img {
+    width: 40%;
+    height: 100px;
+}
+
+#mid p {
+    color: grey;
+    font-size: 25px;
+}
+
+#MID {
+    display: grid;
+    text-align: center;
+    /* align-items: center; */
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+#MID img {
+    width: 40%;
+    height: 100px;
+}
+
+#MID p {
+    color: grey;
+    font-size: 25px;
+}
+
+#Bott p {
+    color: grey;
+    font-size: 17px;
+    text-align: center;
+}
+
+#Bott button {
+    background-color: rgb(236, 38, 3);
+    color: white;
+    border: 1px solid white;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    width: 20%;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 40%;
+}
+
+#Bott>div>img {
+    /* border: 1px solid red; */
+    margin-left: 10%;
+}
+
+#Bott P {
+    font-size: 30px;
+}
+
+#Down {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    margin-left: 50px;
+
+}
+
+#Down img {
+    width: 20%;
+    height: 100px;
+}
+
+#Down h3 {
+    color: coral;
+    font-size: 40px;
+}
+
+#Down h2 {
+    color: gray;
+}
+
+#doctor img {
+    width: 60%;
+    height: 500px;
+}
+
+#Logo img {
+    width: 350px;
+}
+
+#Logo h2 {
+    color: black;
+}
+
+#Logo>button {
+    width: 34%;
+    height: 80px;
+    border: 1px solid green;
+    color: coral;
+    font-size: 25px;
+    border-radius: 7px;
+}
+
+#Bottom {
+    text-align: center;
+}
+
+#Bottom h2,
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+}
+
+#Bottom>button {
+    width: 27%;
+    height: 60px;
+    border: 1px solid coral;
+    color: coral;
+    font-size: 25px;
+    border-radius: 7px;
+}
+
+#Bottom img {
+    width: 60%;
+}
+
+#End {
+    margin-top: 30px;
+    background-color: gray;
+    height: 300px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+
+}
+
+
+#End>div>img {
+    margin-top: 60px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#end-img>img {
+    width: 20%;
+    height: 60px;
+}
+
+#Div {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: -17px;
+    background-color: gray;
+    height: 500px;
+    /* text-align: center; */
+}
+#Div > div{
+    padding: 50px;
+}
+#Div > img{
+        padding: 50px;
+}
+#Div > div > p,h2{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+#Div p:hover{
+    color: coral;
+   
+}
+/* small screen */
+@media all and (min-width:200px) and (max-width:550px) {
+    #sub {
+        /* border: 1px solid black; */
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #mid {
+        /* border: 1px solid black; */
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #MID {
+        /* border: 1px solid black; */
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #Down {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    #Div {
+    grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* med screen */
+@media all and (min-width:551px) and (max-width:799px) {
+    #sub {
+        /* border: 1px solid black; */
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #mid {
+        /* border: 1px solid black; */
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #MID {
+        /* border: 1px solid black; */
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #Down {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    #Div {
+    grid-template-columns: repeat(1, 1fr);
+    }
+}
