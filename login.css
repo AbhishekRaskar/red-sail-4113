@@ -6,8 +6,9 @@
     /* border: 1px solid black; */
 }
 
-#Main>input {
+#Abhi>input {
     width: 30%;
+    height: 100px;
     padding: 10px;
     font-size: 25px;
 }
