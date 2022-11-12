@@ -1,0 +1,53 @@
+form {
+    width: 10%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    font-size: 25px;
+}
+
+form>img {
+    width: 100%;
+    height: 100px;
+
+}
+
+#Main {
+    width: 350px;
+    margin: auto;
+}
+
+#Main>input {
+    width: 350px;
+    height: 30px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: inline
+}
+
+#Main>div>label {
+    font-size: 20px;
+}
+
+#para {
+    margin: -21px 0px 0px 0px;
+    font-size: 18px;
+}
+
+#ip {
+    margin: 0px 0px 0px -20px;
+}
+
+#sub {
+    margin-top: 22px;
+    width: 350px;
+    height: 45px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: yellowgreen;
+    border: 1px solid white;
+    color: white;
+    /* font: bold; */
+    border-radius: 7px;
+}
