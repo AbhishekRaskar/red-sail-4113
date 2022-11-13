@@ -8,20 +8,53 @@
     <title>Login</title>
     <link rel="stylesheet" href="index.css">
     <style>
-        
+
     </style>
 </head>
 
 <body>
     <div id="Abhi">
         <img src="My Plate.png" alt="logo">
-        <input type="email" placeholder="Email Address">
-        <input type="password" placeholder="Password">
-        <button>Login</button>
-        <br>        
-            <h2>Not a Member?<a href="signUp.html">Sign Up Now</a></h2>
-            <h2>Forgot Password?</h2>
+        <input id="EM" type="email" placeholder="Email Address">
+        <input id="PA" type="password" placeholder="Password">
+        <button onclick="Login()">Login</button>
+        <br>
+        <h2>Not a Member?<a href="signUp.html">Sign Up Now</a></h2>
+        <h2>Forgot Password?</h2>
     </div>
 </body>
 
 </html>
+<script>
+
+    let arr = JSON.parse(localStorage.getItem("user"));
+
+    function Login() {
+
+
+
+        let Uemail = document.querySelector("#EM").value;
+
+        let Upass = document.querySelector("#PA").value;
+
+        console.log(arr);
+        let count = 0;
+        for (let i = 0; i < arr.length; i++) {
+
+            if (arr[i].email !== Uemail) {
+                continue;
+            }
+            if (arr[i].Password == Upass) {
+                alert("Login Success");
+                window.location.href = "index.html";
+                return;
+            }
+            else {
+                alert("Wrong Password...!");
+                return;
+            }
+
+        }
+        alert("Incorrect Password or Email...!");
+    }
+</script>
